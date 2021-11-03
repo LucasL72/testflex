@@ -1,0 +1,179 @@
+ /*---------------Partie site---------------------*/
+ body{
+   padding: 0;
+   margin: 0;
+ }
+ .containerr{
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+ }
+
+  /*------------ Color (background, text, ...)-----*/
+
+  .bg-burlywood {
+    background-color: burlywood;
+  }
+  .txt-burlywood {
+    color: burlywood;
+  }
+
+  /*--------------- Flex --------------------------*/
+  .roww {
+    display: flex;
+    flex-direction: row;
+  }
+  .justify-spacebetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /*---------------Navbar--------------------------*/
+  nav {
+    padding: 5px 20px;
+  }
+  .ulnavbar {
+    list-style: none;
+    overflow: hidden;
+    background-color: burlywood;
+  }
+  .linavbar {
+    float: left;
+  }
+  .linavbar a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    text-indent: 50px;
+    letter-spacing: 3px;
+  }
+  .linavbar :hover {
+    background-color: black;
+  }
+  /*------------Masonry----------------------*/
+  h2 {
+    color: peru;
+    outline-style: groove;
+    border-radius: 100px;
+    border-style: double;
+    text-align: center;
+    background-color: antiquewhite;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    padding: 1vh;
+    margin: 1vh;
+  }
+  .masonry {
+    display: flex;
+    flex-flow: row wrap;
+   
+  }
+  .masonry-brick {
+    border-radius: 5px;
+    margin: 0 0 8px 8px;
+    color: white;
+  }
+  .masonry-img {
+    vertical-align: middle;
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+  }
+  .masonry-brick--h {
+    flex:auto;
+    height: 250px;
+    min-width: 100px;
+  }
+  .masonry-brick:hover {
+    outline-style: groove;
+  }
+  /*-------------Ptit article-----------------------*/
+  
+    
+  
+  /* ---------------Partie Footer-----------------*/
+  
+  .footer {
+    background-color: burlywood;
+    color: #4b4c4d;
+  }
+  .footer ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  .footer li {
+    padding: 0 10px;
+  }
+  .footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  .footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  .footer .social a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.85;
+  }
+  .footer .copyright {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 0;
+  }
+
+.btn{
+  border-radius: 5vh;
+  border-style:double;
+  border-color: black;
+}
+
+@media screen and (max-width:600px){
+  .containerr{
+    display: flex;
+    flex-direction: column;
+    width:100vh;
+   }
+   .masonry {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .masonry-brick {
+    border-radius: 5px;
+    margin: 0 7px 7px 0;
+    color: white;
+  }
+  .masonry-img {
+    vertical-align:auto;
+    max-width: 100;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 7%;
+  }
+
+  .masonry-brick:hover {
+    outline-style: none;
+}
+
+}
